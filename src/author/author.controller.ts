@@ -5,6 +5,7 @@ import { AuthorDocument } from 'src/author/schemas/author.schema';
 import { AuthorService } from './author.service';
 import { CommonDbController } from 'src/commonDb/commonDb.controller';
 
+
 @Controller('author')
 export class AuthorController extends CommonDbController<AuthorDocument, ICreateAuthorDto, IUpdateAuthorDto> {
     constructor( authorService: AuthorService) {
